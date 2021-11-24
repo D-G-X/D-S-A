@@ -1,7 +1,7 @@
 # D-S-A
 ### Books - Cracking the Coding Interview, Reema Thareja
 ### Stack:
-- [x]  Stack implementation in java
+- Stack implementation in java
 - [x]  String Reversal
 - [x]  infix to postfix
 - [ ]  postfix evaluation
