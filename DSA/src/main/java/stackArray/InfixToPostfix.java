@@ -27,14 +27,15 @@ public class InfixToPostfix {
 * */
 
     private boolean checkPrecedenceWithTheTopElementOfTheStack(char element){
+        System.out.println("element: "+element+"\t stack Top: "+stack[top]);
         if (element == '^' || element == '('){
             return true;
         }
-        if((element == '*' || element == '/') && (stack[top] != '^')) {
+        if((element == '*' || element == '/') && (stack[top] != '^'  && stack[top] != '*' && stack[top] != '/')) {
             return true;
         }
-        if ((element == '+' || element == '-') && (stack[top] != '*' || stack[top] != '/' || stack[top] != '^')){
-            System.out.println("element: "+element+"\t stack Top: "+stack[top]);
+        if ((element == '+' || element == '-') && (stack[top] != '*' && stack[top] != '/' && stack[top] != '^' && stack[top] != '+'&& stack[top] != '-')){
+            System.out.println("stack Top:"+stack[top]);
             return true;
         } else {
             return false;
@@ -81,11 +82,14 @@ public class InfixToPostfix {
             else if (elementsValid.contains(element)){
 
                 if (element == ')') {
-                    System.out.println("closing parentheses");
+                    System.out.println("closing parentheses"+"\tstackTop: "+stack[top]);
                     //pop until opening parenthesis is not encountered in the stack
                     while(stack[top] != '('){
                         System.out.println("Until Opening parentheses");
                         postfixExpression.append(pop());
+                    }
+                    if(stack[top] == '('){
+                        pop();
                     }
                 } else if (isEmpty()){
                     System.out.println("Stack is empty");
@@ -98,9 +102,10 @@ public class InfixToPostfix {
                         push(element);
                     } else {
                         System.out.println("Popping till valid precedence");
-                        while (!checkPrecedenceWithTheTopElementOfTheStack(element)){
+                        while (!isEmpty() && !checkPrecedenceWithTheTopElementOfTheStack(element)){
                             postfixExpression.append(pop());
                         }
+                        push(element);
                     }
                         // no elements with lower level should be top of higher level elements
                             // if elements with lower level is top of higher level pop the higher level element
@@ -112,7 +117,7 @@ public class InfixToPostfix {
             }
         }
         while (top != -1){
-            System.out.println("Popping remaining elements");
+            System.out.println("Popping remaining elements"+"\tStacktop:"+stack[top]);
             postfixExpression.append(pop());
         }
         return postfixExpression.toString();
