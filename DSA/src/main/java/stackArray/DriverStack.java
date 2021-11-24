@@ -28,8 +28,15 @@ public class DriverStack {
         System.out.println(reverseString);
     }
 
+    public static void testInfixToPostfixStack(){
+        InfixToPostfix infixPostfix = new InfixToPostfix();
+        System.out.println(infixPostfix.infixToPostfix("a+b*(c^d-e)^(f+g*h)-i"));
+    }
+
     public static void main(String[] args) {
 //        testStack();
-        testReverseStringStack();
+//        testReverseStringStack();
+        testInfixToPostfixStack();
     }
+
 }
