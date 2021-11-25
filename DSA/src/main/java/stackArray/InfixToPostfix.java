@@ -23,7 +23,8 @@ public class InfixToPostfix {
 /*
 * elements that stack takes in: (, ), +, -, *, /, ^
 *
-* test expresssion: a+b*(c^d-e)^(f+g*h)-i   test output: abcd^e-fgh*+^*+i-
+* test expressions: a+b*(c^d-e)^(f+g*h)-i   test output:(postfix) abcd^e-fgh*+^*+i-    || (prefix) +a-*b^-^cde+f*ghi
+*
 * */
 
     private boolean checkPrecedenceWithTheTopElementOfTheStack(char element){

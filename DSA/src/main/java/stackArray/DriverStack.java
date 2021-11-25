@@ -33,10 +33,17 @@ public class DriverStack {
         System.out.println(infixPostfix.infixToPostfix("a+b*(c^d-e)^(f+g*h)-i"));
     }
 
+    public static void testPostfixEvaluation(){
+        PostfixEvaluation postEval = new PostfixEvaluation();
+        System.out.println("\nFinal Answer:\t"+postEval.postfixEval("231*+9-"));
+//        System.out.println(postEval.postfixEval("34^"));
+    }
+
     public static void main(String[] args) {
 //        testStack();
 //        testReverseStringStack();
-        testInfixToPostfixStack();
+//        testInfixToPostfixStack();
+        testPostfixEvaluation();
     }
 
 }
