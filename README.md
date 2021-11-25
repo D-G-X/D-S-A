@@ -4,7 +4,9 @@
 - [x]  Stack implementation in java
 - [x]  String Reversal
 - [x]  infix to postfix
-- [ ]  postfix evaluation
+- [x]  postfix evaluation
+- [ ]  infix to prefix
+- [ ]  prefix evaluation
 - [ ]  well formness of parenthesis
 - [ ]  HackerRank Problems( Stack and Array)(15 Prob)
     - [ ]  E - Easy; M - Medium; H - Hard
