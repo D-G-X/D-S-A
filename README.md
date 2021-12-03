@@ -5,12 +5,12 @@
 - [x]  String Reversal
 - [x]  infix to postfix
 - [x]  postfix evaluation
-- [ ]  infix to prefix
+- [x]  infix to prefix
 - [ ]  prefix evaluation
-- [ ]  well formness of parenthesis
+- [x]  well formness of parenthesis
 - [ ]  HackerRank Problems( Stack and Array)(15 Prob)
     - [ ]  E - Easy; M - Medium; H - Hard
-    - [ ]  Array (4E, 1M, 1H)
+    - [x]  Array (4E, 1M, 1H)
     - [ ]  Stack (2E, 5M, 2H)
 
 DSA Practice Code & HackerRank Solved Problems
