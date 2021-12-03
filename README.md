@@ -6,7 +6,7 @@
 - [x]  infix to postfix
 - [x]  postfix evaluation
 - [x]  infix to prefix
-- [ ]  prefix evaluation
+- [x]  prefix evaluation
 - [x]  well formness of parenthesis
 - [ ]  HackerRank Problems( Stack and Array)(15 Prob)
     - [ ]  E - Easy; M - Medium; H - Hard
