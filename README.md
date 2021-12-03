@@ -13,4 +13,11 @@
     - [x]  Array (4E, 1M, 1H)
     - [ ]  Stack (2E, 5M, 2H)
 
+### Queue:
+- [x]  Simple Queue
+- [ ]  Circular Queue
+- [ ]  Priority Queue
+- [ ]  Double Ended Queue
+- [ ]  HackerRank 5 problems (2H, 3M)
+
 DSA Practice Code & HackerRank Solved Problems
