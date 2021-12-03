@@ -32,6 +32,17 @@ public class DriverStack {
         InfixToPostfix infixPostfix = new InfixToPostfix();
         System.out.println(infixPostfix.infixToPostfix("a+b*(c^d-e)^(f+g*h)-i"));
     }
+    public static void testInfixToPrefixStack(){
+        InfixToPrefix infixToPrefix = new InfixToPrefix();
+        System.out.println(infixToPrefix.infixToPrefix("a+b*(c^d-e)^(f+g*h)-i"));
+//        System.out.println(infixPostfix.infixToPretfix("a+b*(c^d-e)^(f+g*h)-i"));
+    }
+
+    public static void testParenthesisChecker(){
+        System.out.println(ParenthesisChecker.parenthesisChecker("[()]{}{[()()]()}"));
+        System.out.println(ParenthesisChecker.parenthesisChecker("{{[[(())]]}}"));
+
+    }
 
     public static void testPostfixEvaluation(){
         PostfixEvaluation postEval = new PostfixEvaluation();
@@ -43,7 +54,9 @@ public class DriverStack {
 //        testStack();
 //        testReverseStringStack();
 //        testInfixToPostfixStack();
-        testPostfixEvaluation();
+        testInfixToPrefixStack();
+//        testPostfixEvaluation();
+//        testParenthesisChecker();
     }
 
 }
