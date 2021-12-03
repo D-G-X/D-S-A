@@ -46,7 +46,8 @@ public class DriverStack {
 
     public static void testPostfixEvaluation(){
         PostfixEvaluation postEval = new PostfixEvaluation();
-        System.out.println("\nFinal Answer:\t"+postEval.postfixEval("231*+9-"));
+//        System.out.println("\nFinal Answer:\t"+postEval.postfixEval("231*+9-"));
+        System.out.println("\nPrefix Eval\nFinal Answer:\t"+ postEval.prefixEval("+9*26"));
 //        System.out.println(postEval.postfixEval("34^"));
     }
 
@@ -54,8 +55,8 @@ public class DriverStack {
 //        testStack();
 //        testReverseStringStack();
 //        testInfixToPostfixStack();
-        testInfixToPrefixStack();
-//        testPostfixEvaluation();
+//        testInfixToPrefixStack();
+        testPostfixEvaluation();
 //        testParenthesisChecker();
     }
 
