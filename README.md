@@ -15,7 +15,7 @@
 
 ### Queue:
 - [x]  Simple Queue
-- [ ]  Circular Queue
+- [x]  Circular Queue
 - [ ]  Priority Queue
 - [ ]  Double Ended Queue
 - [ ]  HackerRank 5 problems (2H, 3M)
