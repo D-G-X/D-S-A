@@ -87,8 +87,35 @@ public class DriverQueue {
         queue1.display();
     }
 
+    public static void testDeque(){
+        Deque deque = new Deque(5);
+
+        deque.insertRear(1);
+        deque.insertFront(2);
+        deque.insertRear(3);
+        deque.insertRear(4);
+        deque.insertFront(5);
+
+        deque.insertFront(7);
+
+        deque.deleteRear();
+        deque.deleteRear();
+        deque.deleteRear();
+        deque.deleteRear();
+        deque.deleteRear();
+        deque.deleteRear();
+
+
+        deque.insertRear(1);
+        deque.insertFront(2);
+        deque.insertRear(3);
+        deque.insertRear(4);
+        deque.insertFront(5);
+    }
+
     public static void main(String[] args){
 //        testQueue();
-        testCircularQueue();
+//        testCircularQueue();
+        testDeque();
     }
 }
