@@ -30,10 +30,38 @@ public class DriverLL {
         linkedList.deleteStart();
         linkedList.displayLinkedList();
         linkedList.deleteStart();
-//        linkedList.displayLinkedList();
     }
-
+    public static void testCLL(){
+        CircularLinkedList cll = new CircularLinkedList();
+        cll.createCLL(1);
+        cll.insertStart(0);
+        cll.insertEnd(4);
+        cll.insertAfter(2,1);
+        cll.insertBefore(3,3);
+        cll.displayLinkedList();
+        cll.deleteStart();
+        cll.displayLinkedList();
+        cll.deleteEnd();
+        cll.displayLinkedList();
+        cll.deleteGivenNode(2);
+        cll.displayLinkedList();
+        cll.insertEnd(10);
+        cll.insertEnd(11);
+        cll.insertEnd(12);
+        cll.displayLinkedList();
+        cll.deleteAfter(1);
+        cll.displayLinkedList();
+        cll.deleteBefore(1);
+        cll.displayLinkedList();
+        cll.deleteBefore(1);
+        cll.displayLinkedList();
+        cll.deleteEnd();
+        cll.displayLinkedList();
+        cll.deleteEnd();
+        cll.displayLinkedList();
+    }
     public static void main(String[] args) {
-        testLinkedList();
+//        testLinkedList();
+        testCLL();
     }
 }
