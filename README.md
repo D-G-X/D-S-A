@@ -20,4 +20,21 @@
 - [ ]  Double Ended Queue
 - [ ]  HackerRank 5 problems (2H, 3M)
 
+### LinkedList:
+- [x]  Singly Linked List
+- [ ]  Circular Linked List
+- [ ]  Doubly Linked List
+- [ ]  Circular Doubly linked list
+- [ ]  Header Linked List
+- [ ]  Multi Linked List
+- [ ]  Stack and Queue using Linked List
+- [ ]  Binary Search Tree using Linked List
+- [ ]  Priority Queue using Linked List
+- [ ]  Deque using linked list
+- [ ]  Implementations:
+    - [ ]  Polynomial Representation (pg225 reema thareja)
+- [ ]  HackerRank Practice Problems
+    - [x]  Solved with simple techniques   
+    - [ ]  use recursion for needed problems
+
 DSA Practice Code & HackerRank Solved Problems
