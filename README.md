@@ -21,7 +21,7 @@
 
 ### LinkedList:
 - [x]  Singly Linked List
-- [ ]  Circular Linked List
+- [x]  Circular Linked List
 - [ ]  Doubly Linked List
 - [ ]  Circular Doubly linked list
 - [ ]  Header Linked List
