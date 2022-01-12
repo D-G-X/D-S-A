@@ -15,7 +15,6 @@ public class LinkedList {
 
     public void createLinkedList(int data){
         head = new Node(data);
-        head.next = null;
         System.out.println("Created a linked List");
     }
 
@@ -154,6 +153,28 @@ public class LinkedList {
             prePrev.next = start;
         }
         return head;
+    }
+
+    public Node search(int data){
+        Node start = null;
+        if(head != null){
+            start = head;
+            int position = 0;
+            while(start.data != data && start.next != null){
+                start = start.next;
+                position++;
+            }
+
+            if (start != null && start.data == data){
+                System.out.println(data+" is at "+position+" position of the linked list.");
+            } else {
+                System.out.println(data + " Not Found.");
+            }
+
+        } else {
+            System.out.println("Empty LinkedList");
+        }
+        return start;
     }
 
 

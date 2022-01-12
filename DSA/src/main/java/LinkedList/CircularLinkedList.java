@@ -15,7 +15,7 @@ public class CircularLinkedList {
     public void createCLL(int data){
         head = new Node(data);
         head.next = head;
-        System.out.println("Created a linked List");
+        System.out.println("Created a Circular linked List");
     }
 
     public Node insertStart(int data){
@@ -97,10 +97,9 @@ public class CircularLinkedList {
     }
 
     public Node deleteStart(){
-        if (!(head == null)){
+        if ((head != null)){
             if (head == head.next){
-                head = null;
-                return head;
+                return null;
             }
             Node start = head.next;
             while (start.next != head){
@@ -116,8 +115,7 @@ public class CircularLinkedList {
     public Node deleteEnd(){
         if (head != null){
             if (head == head.next){
-                head = null;
-                return head;
+                return null;
             }
             Node start = head.next;
             Node prev = head;
@@ -173,6 +171,28 @@ public class CircularLinkedList {
             }
         }
         return head;
+    }
+
+    public Node search(int data){
+        Node start = null;
+        if(head != null){
+            start = head;
+            int position = 0;
+            while(start.data != data && start.next != head){
+                start = start.next;
+                position++;
+            }
+
+            if (start != head && start.data == data){
+                System.out.println(data+" is at "+position+" position of the linked list.\n");
+            } else {
+                System.out.println(data + " Not Found.\n");
+            }
+
+        } else {
+            System.out.println("Empty LinkedList");
+        }
+        return start;
     }
     
 }
